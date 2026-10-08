@@ -46,9 +46,21 @@ Desktop/mobile screenshots are saved outside Git as review evidence. The
 underlying application/API/provider code is unchanged, so those suites were
 not rerun and no provider or production behavior is claimed.
 
-Public replacement hosting verification will be recorded after this revision
-is published and inspected. The October 7 evidence below describes the former
-12-page review and remains historical.
+Public replacement: https://constitutionalmoney.github.io/cheqyourself-vsl-review/
+
+The Pages build reported built with no error for artifact commit
+5c7af5f578497822690c20eb9c25339ae497c13d. All seven public HTML pages returned
+HTTP 200, and all five retired watch.html URLs returned HTTP 404. The public
+gallery showed five cards, one page button each and no price. All five public
+funnels had one original thumbnail, six work areas, a final offer after the
+story, no preceding monetary amount and no desktop overflow. The first
+thumbnail was rechecked after the load event and had naturalWidth=1672.
+The fifth's recording notice worked publicly; no console warning/error appeared.
+The public gallery screenshot is saved outside Git. This proves draft review
+hosting and presentation only, not video playback or provider operations.
+
+The October 7 evidence below describes the former 12-page review and remains
+historical.
 
 ## October 7 extension
 

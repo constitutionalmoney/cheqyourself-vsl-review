@@ -84,6 +84,10 @@ HTML, approved assets and review notes are exported to its separate repository;
 application source, raw transcripts, credentials and client records are excluded.
 No custom domain, DNS change or subscription is needed.
 
+On October 8, the replacement Pages build completed, all seven public HTML
+pages returned HTTP 200, and all five former watch.html URLs returned HTTP 404.
+The public gallery and all five combined funnels were inspected in a browser.
+
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
 The exporter creates 21 public files and a ZIP. When updating the existing
