@@ -1,55 +1,60 @@
-# Five standalone Cheq Yourself funnel concepts
+# Five standalone, single-page VSL funnels
 
-This is a draft review gallery, separate from the production website. It
-registers no application routes, changes no menus or GetResponse lists, sends
-no email, books no appointments and records no purchases.
+Share the review gallery: https://constitutionalmoney.github.io/cheqyourself-vsl-review/
 
-| Concept | Sales page | VSL page | Reference / conversion |
-| --- | --- | --- | --- |
-| 01 · The Property File | [Sales](designed/index.html) | [VSL](designed/watch.html) | Designed HTML; fit-call invitation |
-| 02 · The Direct Conversation | [Sales](simple/index.html) | [VSL](simple/watch.html) | Simple HTML; fit-call invitation |
-| 03 · The Records First | [Sales](squeeze/index.html) | [VSL](squeeze/watch.html) | Squeeze HTML; optional overview signup simulation |
-| 04 · The Guided Decision | [Sales](screenshots/index.html) | [VSL](screenshots/watch.html) | Supplied screenshots; fit-call invitation |
-| 05 · The Guardian of the Record | [Sales](archival/index.html) | [VSL](archival/watch.html) | October 7 brief; direct purchase and free webinar |
+Each concept is now one page containing the VSL preview and complete sales
+story. The price, reference price, saving and any monetary value estimates
+appear only in the final offer section, after the explanation, process, six
+work areas, service limits, policy and FAQs. There is no early price, sticky
+price bar, checkout button or shortcut to the offer. The gallery shows no price.
 
-Start at [the gallery](index.html), which also compares these concepts with
-PR 80's operational five-page flow. No conversion experiment was run.
+| Concept | Combined sales/VSL page | Final action |
+| --- | --- | --- |
+| 01 · The Property File | [Review](designed/index.html) | Property fit call preview |
+| 02 · The Direct Conversation | [Review](simple/index.html) | Property fit call preview |
+| 03 · The Records First | [Review](squeeze/index.html) | Property fit call preview |
+| 04 · The Guided Decision | [Review](screenshots/index.html) | Property fit call preview |
+| 05 · The Guardian of the Record | [Review](archival/index.html) | Supplied direct checkout link |
 
-Every sales and VSL page uses the exact supplied VSL-Video-Thumbnail.png.
-Clicking the play control explains that the recording and captions remain
-pending. The notice closes and keyboard focus returns to Play.
+The former five watch.html pages are removed. The gallery has one page button
+per concept. Concept 03 no longer asks for signup before the overview; the
+video and written explanation are on the same page without a subscription.
 
-## Draft-review boundary
+## Offer and draft boundary
 
-Concepts 01–04 use local form and payment demonstrations. Required fields
-validate sample details only; optional consent is unchecked. Forms clear the
-values and send/save nothing. Video access does not require a signup.
+The shared offer remains CAD 1,799, reduced from CAD 2,499, saving CAD 700,
+with the same six core work areas. No Trust Documentation offer is added.
+The owner-approved record allowance, 30–90-day turnaround after required
+information/scope confirmation, and 14-day cancellation/refund policy remain.
 
-Concept 05 has no fit-call step. Primary buttons use the exact supplied label
-and same-tab Stripe payment-link destination; secondary buttons open the
-supplied free-webinar destination in a new tab. Do not complete a payment
-while reviewing the design. The checkout's current amount, taxes and intake
-follow-up have not been verified; no provider settings were changed.
+All five use the exact supplied thumbnail. Clicking Play explains that the
+recording is pending; closing the notice returns keyboard focus. The written
+explanation is on the same page. No playable recording or captions exist yet.
 
-Concept 05 includes the owner-supplied proposal-letter bonus and component
-value estimates, clearly attributed to supplied quotes/costs/internal labour
-estimates. They are not independently verified market rates. The six core
-work areas and $1,799 CAD price / $2,499 reference / $700 saving are preserved.
-There is no Trust Documentation offer.
+Concepts 01–04 use a local, sample-only fit form. Required fields validate,
+optional consent starts unchecked, values clear and no request, email,
+subscription, appointment or purchase is sent or stored. A request is not a
+confirmed booking. No private property details should be entered here.
 
-At the user's explicit request, Terry and Saige's exact lorem ipsum cards
-appear with prominent placeholder warnings and data-placeholder="true".
-They are not endorsements. The supplied case study is withheld pending
-supporting records and publication permission.
+Concept 05 retains its exact owner-supplied purchase label and Stripe URL,
+but only in the final offer. Its free-webinar alternative also appears there.
+The current checkout amount, taxes, full terms and paid intake remain
+unverified. Do not complete a transaction while reviewing the design.
 
-All pages use noindex,nofollow and prohibit connections, embedded frames and
-form transmission. There are no new dependencies, subscriptions, external
-fonts or trackers. External navigation is confined to Concept 05's two supplied
-destinations. A review site is not a production release.
+Concept 05 retains the owner-supplied proposal-letter bonus, attributed value
+estimates and two explicitly labeled Terry/Saige lorem ipsum placeholders.
+These are not endorsements or independently verified market rates. The case
+study remains withheld until evidence and publication permission are supplied.
+Production validation deliberately rejects the testimonial placeholders.
+
+This is a public draft design review, separate from the production website.
+It changes no application routes, menus, checkout settings, GetResponse lists
+or deployment configuration. No legal outcome, invented credential, results
+metric, scarcity deadline or delivery claim is added.
 
 ## Edit and validate
 
-From the repository root, using existing Python and Node runtimes:
+Using existing Python and Node runtimes, from the repository root:
 
     python previews/vsl-funnels/build.py
     python previews/vsl-funnels/validate.py
@@ -57,53 +62,47 @@ From the repository root, using existing Python and Node runtimes:
     git diff --check
     python -m http.server 5092 --bind 127.0.0.1 --directory previews/vsl-funnels
 
-The generator writes 12 HTML pages: five sales, five VSL, gallery and script.
-Edit content.json for core offer facts, archival.json for Concept 05's URLs,
-value stack and FAQs, build.py / archival.py for layout, and assets/site.css
-and assets/site.js for presentation and interactions. Rebuild generated HTML.
-Both layouts derive price/savings from content.json.
-
-For a production check:
+The generator produces seven HTML pages: five combined funnels, gallery and
+recording script. Edit content.json for shared offer facts, funnel.py for the
+first four layouts, archival.json / archival.py for Concept 05, and
+assets/site.css / assets/site.js for presentation and interactions.
 
     python previews/vsl-funnels/validate.py --production
 
-This intentionally fails while draft testimonial placeholders remain. Replace
-them with approved text or remove them before a future production release.
-No production release is authorized.
+This intentionally fails while the two testimonial placeholders remain.
+No production release is authorized by this review request.
 
-The existing [573-word recording script](script.html) and editable
-[Markdown](vsl-script.md) retain the fit-call close for Concepts 01–04.
-Select a direct-purchase close for Concept 05 before recording.
+The existing [573-word script](script.html) and [editable copy](vsl-script.md)
+retain a fit-call close for Concepts 01–04. Select a direct-purchase close
+before recording Concept 05.
 
-## Shareable web review
+## Review hosting
 
-Share [the five-funnel review gallery](https://constitutionalmoney.github.io/cheqyourself-vsl-review/).
-It is public and needs no sign-in or running local preview server. On October 7,
-the GitHub Pages build completed and all 12 public HTML pages returned HTTP 200.
-The public gallery, fifth page and recording notice were also checked in a browser.
-
-Sites publishing controls remained unavailable after reconnection approval.
-The user authorized a web-preview alternative. Only public review files are
-exported to a separate static review repository and GitHub Pages. No application
-source, raw transcript, input screenshots, credentials or property/client records
-are exported. No custom domain or DNS change was made.
-
-Export a portable static bundle outside this source directory:
+The same public GitHub Pages URL replaces the previous review. The host needs
+no sign-in and does not depend on a running local server. Only the review
+HTML, approved assets and review notes are exported to its separate repository;
+application source, raw transcripts, credentials and client records are excluded.
+No custom domain, DNS change or subscription is needed.
 
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
-The exporter produces public files and cheq-yourself-five-vsl-review.zip.
-No package installation is required by its host.
+The exporter creates 21 public files and a ZIP. When updating the existing
+export, it safely retires only the five known former watch.html files. It does
+not recursively delete the destination or touch its Git metadata.
+
+All pages have noindex,nofollow, no-referrer and a Content Security Policy that
+blocks connections, embedded frames and form transmission. There are no
+external fonts, trackers or dependencies. Only Concept 05's two supplied
+external destinations are allowed.
 
 ## Awaiting configuration/assets; still manual
 
-Record the video, time it, add reviewed captions and choose the final CTA.
-Replace testimonial placeholders with approved words or remove them. Verify
-case-study evidence/permission before use, source quotes/current registry fees,
-tax treatment, contracting details, full policy/contact URLs, checkout amount,
-paid-intake follow-up and proposal-letter fulfillment. Design selection and
-production website integration require separate approval. Staff scope review
-and calendar/provider operations remain outside this review build.
+Record the video and add reviewed captions. Approve or remove testimonial
+copy; verify case-study permission before use. Confirm current quotes/fees,
+checkout amount/taxes, full policy/contact links, written scope and paid-intake
+fulfillment. Staff review, confirmed calendars, GetResponse configuration and
+payment verification are outside this static review. Design selection and
+production integration require separate approval.
 
 See [source decisions](SOURCES.md), [comparison](COMPARISON.md) and
-[validation record](QA.md).
+[validation evidence](QA.md).

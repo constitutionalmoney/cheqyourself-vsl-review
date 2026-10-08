@@ -1,5 +1,34 @@
 # Source and content decisions
 
+## October 8 redesign
+
+The user's latest request controls this revision: combine the VSL and sales
+story into one page per concept, place price at the bottom after the information,
+and replace the existing GitHub Pages review at the same URL. Earlier separate
+watch pages, hero pricing and purchase bars are superseded by this instruction.
+
+The two requested articles were read on October 8:
+
+- [Close's sales funnel examples](https://close.com/blog/sales-funnel-examples)
+  informed a clear progression from explanation to the service decision and a
+  focused final action for the consultation-based concepts.
+- [Swipe Pages' VSL examples](https://swipepages.com/blog/7-best-vsl-landing-page-examples-of-2026/)
+  informed prominent video, scannable process/scope, useful comparisons and
+  objection handling before the offer. One example recommends earlier pricing;
+  the user's explicit bottom-price instruction takes precedence here.
+
+These are editorial design choices, not demonstrated conversion improvements.
+No example's endorsements, client counts, performance figures, guarantees,
+countdown timers or scarcity are copied. The existing draft testimonials stay
+clearly labeled. All monetary value estimates move to the final offer too;
+the approved core price, scope and policies remain unchanged.
+
+Concept 03's signup invitation is removed so viewing the overview never needs
+another page or consent. The final fit form still preserves an unchecked,
+optional marketing choice. No subscription, payment or account setting changes.
+
+The following sections describe the source/history before this redesign.
+
 ## October 7 extension
 
 The latest instructions add a fifth standalone concept from the attached

@@ -1,5 +1,55 @@
 # Validation record
 
+## October 8 single-page redesign
+
+Implemented: five combined VSL/sales pages, one gallery link per concept,
+video near the beginning, clearer record/process/scope/DIY/service-limit
+sections and one final offer after the information. All money figures occur
+inside that offer, including the fifth's component estimates. Hero prices,
+priced FAQs, price metadata, early fit/checkout controls, sticky purchase bars,
+the overview signup and the five former watch.html pages are removed.
+
+Current commands, from the repository root:
+
+| Command | Exit/result |
+| --- | --- |
+| python previews/vsl-funnels/build.py | 0; five combined funnels, gallery and script |
+| python previews/vsl-funnels/validate.py | 0; exactly seven pages, one VSL and one final offer per concept, no monetary amounts outside offer, no early price shortcut or separate watch links, unchanged pricing/scope/assets, consent defaults and transmission gates |
+| node --check previews/vsl-funnels/assets/site.js | 0 |
+| python previews/vsl-funnels/package_preview.py --output <review-export-directory> | 0; 21 public files and ZIP; five former watch files retired from the existing export |
+| Inline standard-library pricing-boundary probes using validate.Page | 0; hero, metadata and collapsed-FAQ amounts detected; final-only pricing accepted |
+| python previews/vsl-funnels/validate.py --production | 1, intentionally; two draft testimonial cards block production |
+| git diff --check | 0 |
+
+Browser checks covered all five pages at 1280×900, 390×844 and 320×760
+(15 page/viewport combinations). Every page had one loaded original thumbnail,
+six work areas, no horizontal overflow, no amounts before the final offer and
+no separate-VSL links. Play/close/focus restoration passed in every combination.
+At desktop width, the package price began approximately 89–92% down each
+full document, after the main explanation. This is layout evidence, not a
+conversion result or a guarantee that a visitor read every section.
+
+All four fit-form concepts rejected empty submission. Synthetic sample details
+with optional consent unchecked showed the no-request result, cleared values
+and created no query string. Return closed the dialog and restored CTA focus.
+The first FAQ expanded through keyboard activation and reflected aria-expanded.
+The fifth's record layer expanded; two placeholder cards remained; its one
+purchase CTA used the exact supplied label/URL inside the final offer. No
+checkout fields were entered and no payment was attempted.
+
+The gallery had five cards and exactly one page button per card, with no price.
+At all three widths, titles stayed inside the cards, did not overlap thumbnails
+and produced no horizontal overflow. Mobile overview/records navigation remained
+visible. No console errors or warnings appeared in the inspected preview tab.
+
+Desktop/mobile screenshots are saved outside Git as review evidence. The
+underlying application/API/provider code is unchanged, so those suites were
+not rerun and no provider or production behavior is claimed.
+
+Public replacement hosting verification will be recorded after this revision
+is published and inspected. The October 7 evidence below describes the former
+12-page review and remains historical.
+
 ## October 7 extension
 
 Implemented: fifth standalone sales/VSL pair, five-concept gallery, original

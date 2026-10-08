@@ -1,55 +1,44 @@
-# Comparison with PR 80
+# Five combined funnel concepts and PR 80
 
-## October 7 addition
+## Current October 8 review
 
-Concept 05, The Guardian of the Record, is the supplied archival long-form
-direct-purchase approach. It explains the three layers, scoped preparation,
-owner-supplied value estimates, proposal-letter bonus and service limitations.
-Its primary CTA opens the supplied Stripe link without a fit step; the
-secondary choice is the free webinar. Paid intake/verification are not
-implemented by these static pages. Terry and Saige's cards are explicitly
-draft placeholders at the user's request; no endorsement or result is claimed.
+Each concept is one standalone page with its VSL at the beginning and a
+single final offer after the information. The separate VSL routes are removed.
+The existing public review URL remains unchanged. No conversion test was run.
 
-All five concepts now have the same supplied thumbnail and honest
-recording-pending interaction. The gallery links to all ten sales/VSL pages.
-PR 80 remains the separate operational flow, unchanged in this extension.
-The earlier comparison/recommendation below describes Concepts 01–04 and is
-a design judgment, not measured conversion evidence. Concept 05 introduces
-a different conversion decision for review.
-
-## Initial October 2 comparison
-
-PR 80 is the existing operational five-page path. The new PR is an isolated
-design package based on main; it does not depend on merging PR 80, modify its routes,
-or connect these forms to its API.
-
-| PR 80 page | Purpose | How the new concepts relate |
+| Concept | Presentation | Final decision |
 | --- | --- | --- |
-| /crown-grant-overview | Offer and consent-aware overview access | Four alternative sales-page arrangements. |
-| /crown-grant-overview/watch | Video/written overview, six work areas, policy and follow-up choices | Four VSL pages, each with the same factual overview and a recording hold. |
-| /crown-grant-overview/fit | Actual scope request, with request and booking distinguished | Each concept includes a locally validated form and an explicit no-request preview result. |
-| /crown-grant-overview/next-step | Request acknowledgment, staff review and confirmed-calendar handoff | The dialog explains that a request is not a booked appointment; no meeting is fabricated. |
-| /crown-grant-overview/payment-status | Staff-approved checkout, verified payment and paid intake | A payment-handoff preview describes this future step without creating checkout or paid access. |
+| The Property File | Structured blue/ivory, scattered-record problem, connected research path and six-area package | Request a property fit call |
+| The Direct Conversation | Quiet editorial type, prominent centered video and a readable explanation | Request a property fit call |
+| The Records First | Warm education-first layout; overview requires no signup or separate page | Request a property fit call |
+| The Guided Decision | Bold navy, guided process, scannable scope and service boundaries | Request a property fit call |
+| The Guardian of the Record | Archival navy/gold, interactive record layers, owner-supplied proposal-letter bonus and conspicuous draft testimonials | Supplied direct checkout link, or free webinar |
 
-PR 80 retains independent GetResponse autoresponder integration and suppression,
-staff review, private approval, Stripe verification and durable state support.
-Those operational features are not copied into this visual prototype.
+The offer remains CAD 1,799, CAD 2,499 reference and CAD 700 saving, with the
+same six work areas. All monetary figures occur in the final offer on each
+funnel, including Concept 05's attributed component estimates. None appear in
+the hero, metadata, FAQ, header, gallery or a sticky purchase bar. No Trust
+Documentation offer is advertised.
 
-Both sets now show one **$1,799 CAD core offer**, **$2,499 CAD reference price**
-and **$700 CAD saving**, with the same six work areas. The Trust Documentation
-sales offer is retired. Historical payment/fulfillment handling is retained
-in PR 80; removing an offer does not erase previously paid orders.
+The first four explain a scope review before approved payment. The fifth keeps
+the owner's supplied direct-purchase sequence. These are alternative design
+choices, not proof of provider setup or measured conversion performance.
 
-## Design recommendation
+## Relationship to PR 80
 
-1. **The Property File** gives the scope and decision to delegate the most
-   room. Start here for a general campaign.
-2. **The Direct Conversation** is strongest when visitors already have context
-   and want a short explanation.
-3. **The Records First** introduces the topic before the sales decision,
-   separating optional follow-up consent from video access.
-4. **The Guided Decision** borrows the screenshots' bold mobile structure,
-   but uses actual scope, process and policy rather than invented proof.
+PR 80 is the separate operational path: overview, watch, fit request,
+next-step/calendar state and verified-payment status. Its provider/state code
+is not copied into this static package, and PR 80 is unchanged by this redesign.
 
-These are editorial and design judgments. No conversion data, traffic test,
-email delivery, booking or purchase is inferred from the preview.
+The review forms validate sample details locally, clear them and disclose that
+nothing was sent. Optional consent starts unchecked. They do not enroll a
+GetResponse contact, book an appointment or create paid access. Concept 05
+links to the supplied Stripe URL but does not verify checkout amount or payment.
+
+The genuine thumbnail and brand artwork remain unchanged. The fifth's draft
+Terry/Saige cards are labeled placeholders, not client endorsements; production
+validation rejects them. The proposed case study is withheld pending evidence
+and publication permission. No legal outcome is inferred.
+
+Choose a design after reviewing the copy, mobile flow and final action. A
+future production implementation needs separate configuration, review and approval.
