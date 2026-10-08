@@ -31,6 +31,12 @@ after passing it. The gallery contained five cards and had no mobile overflow.
 Temporary viewport overrides were reset. Desktop/mobile screenshots are saved
 outside Git as local review evidence, without private client data.
 
+The original fit form rejected empty submission; optional consent remained
+unchecked. Synthetic sample details produced the no-request notice, were
+cleared, and did not enter the URL. The squeeze overview form with consent
+unchecked opened its watch page, disclosed that no signup was sent, and used
+only the fixed preview=overview query flag.
+
 No application/API, GetResponse, payment, booking or production behavior is
 claimed from these checks. No dependencies were installed. The underlying
 quotes/fees, checkout amount/taxes, case-study evidence and paid-intake workflow
@@ -41,8 +47,17 @@ Sites controls were unavailable after reconnection approval. The user approved
 a web-preview fallback. A temporary tunnel was rejected by workstation web
 protection and stopped; no protection or certificate verification was bypassed.
 The fallback is a separate GitHub Pages static review export, with no custom
-domain/DNS change and no production application deployment. Hosting completion
-is recorded only after its build and public checks succeed.
+domain/DNS change and no production application deployment.
+
+Public review: https://constitutionalmoney.github.io/cheqyourself-vsl-review/
+
+The initial Pages artifact commit edf091cd68141acc91b204f03ad0263f673c2bc3
+reported build status built with no error. All 12 public HTML pages returned
+HTTP 200 without authentication. The public browser gallery showed five
+concept cards and their ten sales/VSL links; navigating to the fifth page and
+opening its recording notice worked. No console errors or warnings appeared.
+The public gallery screenshot is saved outside Git. This verifies review
+hosting, not recording playback, live checkout or production application behavior.
 
 ## Initial October 2 evidence (historical)
 

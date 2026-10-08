@@ -77,12 +77,16 @@ Select a direct-purchase close for Concept 05 before recording.
 
 ## Shareable web review
 
+Share [the five-funnel review gallery](https://constitutionalmoney.github.io/cheqyourself-vsl-review/).
+It is public and needs no sign-in or running local preview server. On October 7,
+the GitHub Pages build completed and all 12 public HTML pages returned HTTP 200.
+The public gallery, fifth page and recording notice were also checked in a browser.
+
 Sites publishing controls remained unavailable after reconnection approval.
 The user authorized a web-preview alternative. Only public review files are
 exported to a separate static review repository and GitHub Pages. No application
 source, raw transcript, input screenshots, credentials or property/client records
-are exported. No custom domain or DNS change is needed. The handoff URL is
-confirmed only after the Pages build and public HTTP/browser checks succeed.
+are exported. No custom domain or DNS change was made.
 
 Export a portable static bundle outside this source directory:
 
