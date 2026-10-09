@@ -42,6 +42,12 @@ nothing was sent. Optional consent starts unchecked. They do not enroll a
 GetResponse contact, book an appointment or create paid access. Concept 05's
 former direct Stripe link is removed in favor of the same fit-call preview.
 
+All five play the supplied V3 final cut, with manual native controls and the
+same original thumbnail as poster. "Recording pending" is replaced by
+"Founder of Cheq Yourself". The browser-compatible 1080p H.264/AAC copy is
+hosted in the separate public review repository; the original remains unchanged.
+Reviewed captions are pending; the earlier script is a writing reference.
+
 The genuine thumbnail and brand artwork remain unchanged. The fifth's draft
 Terry/Saige cards are labeled placeholders, not client endorsements; production
 validation rejects them. The proposed case study is withheld pending evidence

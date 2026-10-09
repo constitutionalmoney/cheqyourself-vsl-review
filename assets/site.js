@@ -46,30 +46,29 @@
     form.querySelector("[data-preview-submit]")?.addEventListener("click", submit);
   });
 
-  document.querySelectorAll("[data-recording]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const message = button.closest(".video-frame")?.querySelector("[data-video-message]");
-      if (message) {
-        message.hidden = false;
-        message.focus();
+  document.querySelectorAll("[data-play-video]").forEach((button) => {
+    const video = button.closest(".video-frame")?.querySelector("video");
+    const status = button.closest("#vsl")?.querySelector("[data-video-status]");
+    if (!video) return;
+    button.addEventListener("click", async () => {
+      button.disabled = true;
+      try {
+        await video.play();
+      } catch {
+        if (status) status.hidden = false;
+      } finally {
+        button.disabled = false;
       }
     });
-  });
-
-  document.querySelectorAll("[data-video-close]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const frame = button.closest(".video-frame");
-      const message = frame?.querySelector("[data-video-message]");
-      if (message) message.hidden = true;
-      frame?.querySelector("[data-recording]")?.focus();
+    video.addEventListener("play", () => {
+      button.hidden = true;
+      if (status) status.hidden = true;
     });
-  });
-
-  document.querySelectorAll("[data-video-read]").forEach((link) => {
-    link.addEventListener("click", () => {
-      const message = link.closest(".video-frame")?.querySelector("[data-video-message]");
-      if (message) message.hidden = true;
+    video.addEventListener("error", () => {
+      button.hidden = false;
+      if (status) status.hidden = false;
     });
+    video.addEventListener("ended", () => { button.hidden = false; });
   });
 
   document.querySelectorAll("details").forEach((details) => {

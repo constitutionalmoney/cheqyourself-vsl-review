@@ -1,5 +1,28 @@
 # Source and content decisions
 
+## October 9 supplied V3 recording
+
+The user supplied VSL-AssertCrownGrantPackage-V3-FinalCut.mp4 and explicitly
+requested that it play on all five hosted concepts. This authorizes public
+review hosting of that asset, without production application integration.
+The requested presenter credit is "Founder of Cheq Yourself"; pending-recording
+copy is removed from the current pages.
+
+The supplied file is 1920×1080, HEVC/AAC, 409,538,991 bytes and 476.103 seconds.
+A browser-compatible H.264/AAC yuv420p streaming copy preserves the resolution,
+runtime and all 14,283 video frames; it does not cut or rewrite the recording.
+The original is retained unchanged. The copy is 77,659,967 bytes and is below
+GitHub's 100 MiB Git-file limit. Its MP4 metadata precedes media data. Original
+and copy checksums, the public URL and format are recorded in video.json.
+
+The binary belongs only to the separate public review repository, not the
+application repository. The exporter verifies its size and checksum before
+copying or reusing it. No new provider, subscription, DNS or VPS configuration
+is required. The original thumbnail remains the poster. Native video controls
+support manual playback, pause, seeking and fullscreen; no autoplay or tracking
+is added. Captions remain pending, and the earlier script is not treated as a
+transcript of this V3 recording. Prior recording-pending notes below are historical.
+
 ## October 9 revisions
 
 The latest user instructions supersede the fifth brief's direct-purchase CTA

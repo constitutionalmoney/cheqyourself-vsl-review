@@ -28,9 +28,18 @@ with the same six core work areas. No Trust Documentation offer is added.
 The owner-approved record allowance, 30–90-day turnaround after required
 information/scope confirmation, and 14-day cancellation/refund policy remain.
 
-All five use the exact supplied thumbnail. Clicking Play explains that the
-recording is pending; closing the notice returns keyboard focus. The written
-explanation is on the same page. No playable recording or captions exist yet.
+All five play the supplied V3 final-cut video, with the exact supplied thumbnail
+as the poster. Clicking Play starts the video; native controls support pause,
+seeking, volume and fullscreen. Playback is manual and the MP4 is not preloaded.
+The presenter caption reads "Mark Smith · Founder of Cheq Yourself".
+
+The original HEVC file is 409,538,991 bytes. A separate H.264/AAC, yuv420p,
+1080p streaming copy is 77,659,967 bytes, with the same 476.103-second duration
+and 14,283 video frames. MP4 metadata precedes media data for streaming startup.
+The original is unchanged. The approved copy is hosted in the separate public
+review repository, below GitHub's 100 MiB file limit; no VPS upload is needed
+for this draft. See [GitHub file limits](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+Reviewed captions remain pending; none are invented from the earlier script.
 
 All five use a local, sample-only fit form. Required fields validate,
 optional consent starts unchecked, values clear and no request, email,
@@ -73,6 +82,9 @@ The generator produces seven HTML pages: five combined funnels, gallery and
 recording script. Edit content.json for shared offer facts, funnel.py for the
 first four layouts, archival.json / archival.py for Concept 05, and
 assets/site.css / assets/site.js for presentation and interactions.
+video.json records the approved public MP4 URL, size, SHA-256 and media format.
+The large binary is stored only in the public review repository, outside this
+application checkout.
 
     python previews/vsl-funnels/validate.py --production
 
@@ -102,18 +114,22 @@ wrapping sources were checked on desktop and mobile.
 
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
-The exporter creates 21 public files and a ZIP. When updating the existing
+The exporter creates 22 public files and a ZIP, including the verified video.
+For a new export, add --video-file <approved-streaming-copy.mp4>. For an existing
+export, its matching video can be reused; size and SHA-256 must match video.json.
+When updating the existing
 export, it safely retires only the five known former watch.html files. It does
 not recursively delete the destination or touch its Git metadata.
 
 All pages have noindex,nofollow, no-referrer and a Content Security Policy that
-blocks connections, embedded frames and form transmission. There are no
+blocks API connections, embedded frames and form transmission, while allowing
+the review's media host. There are no
 external fonts, trackers or dependencies. Only Concept 05's supplied
-free-webinar destination is allowed.
+free-webinar destination and the approved MP4 URL are allowed.
 
 ## Awaiting configuration/assets; still manual
 
-Record the video and add reviewed captions. Approve or remove testimonial
+Add reviewed captions. Approve or remove testimonial
 copy; verify case-study permission before use. Confirm current quotes/fees,
 checkout amount/taxes, full policy/contact links, written scope and paid-intake
 fulfillment. Staff review, confirmed calendars, GetResponse configuration and
