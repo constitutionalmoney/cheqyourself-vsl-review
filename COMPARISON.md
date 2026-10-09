@@ -1,6 +1,6 @@
 # Five combined funnel concepts and PR 80
 
-## Current October 8 review
+## Current October 9 review
 
 Each concept is one standalone page with its VSL at the beginning and a
 single final offer after the information. The separate VSL routes are removed.
@@ -12,7 +12,7 @@ The existing public review URL remains unchanged. No conversion test was run.
 | The Direct Conversation | Quiet editorial type, prominent centered video and a readable explanation | Request a property fit call |
 | The Records First | Warm education-first layout; overview requires no signup or separate page | Request a property fit call |
 | The Guided Decision | Bold navy, guided process, scannable scope and service boundaries | Request a property fit call |
-| The Guardian of the Record | Archival navy/gold, interactive record layers, owner-supplied proposal-letter bonus and conspicuous draft testimonials | Supplied direct checkout link, or free webinar |
+| The Guardian of the Record | Archival navy/gold, all three record descriptions visible, wrapping record sources, owner-supplied proposal-letter bonus and conspicuous draft testimonials | Request a property fit call, or free webinar |
 
 The offer remains CAD 1,799, CAD 2,499 reference and CAD 700 saving, with the
 same six work areas. All monetary figures occur in the final offer on each
@@ -20,9 +20,16 @@ funnel, including Concept 05's attributed component estimates. None appear in
 the hero, metadata, FAQ, header, gallery or a sticky purchase bar. No Trust
 Documentation offer is advertised.
 
-The first four explain a scope review before approved payment. The fifth keeps
-the owner's supplied direct-purchase sequence. These are alternative design
-choices, not proof of provider setup or measured conversion performance.
+All five explain a scope review before approved payment. Each video has a
+"Request a Property Fit Call" button directly below its thumbnail, jumping
+to the price card in the final offer. The bottom button opens the local popup,
+including all nine requested Type of Property choices. This is a draft review,
+not proof of provider setup or measured conversion performance.
+
+The first four reuse the fifth's reader questions, wrapping eight-source
+record cards, explicit standard record allowance and scoped-file comparison.
+The shared six work areas are unchanged. The fifth's proposal-letter bonus,
+attributed estimates and draft testimonial placeholders remain specific to it.
 
 ## Relationship to PR 80
 
@@ -32,8 +39,8 @@ is not copied into this static package, and PR 80 is unchanged by this redesign.
 
 The review forms validate sample details locally, clear them and disclose that
 nothing was sent. Optional consent starts unchecked. They do not enroll a
-GetResponse contact, book an appointment or create paid access. Concept 05
-links to the supplied Stripe URL but does not verify checkout amount or payment.
+GetResponse contact, book an appointment or create paid access. Concept 05's
+former direct Stripe link is removed in favor of the same fit-call preview.
 
 The genuine thumbnail and brand artwork remain unchanged. The fifth's draft
 Terry/Saige cards are labeled placeholders, not client endorsements; production

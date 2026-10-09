@@ -1,5 +1,45 @@
 # Validation record
 
+## October 9 record visibility, shared fit calls and property type
+
+Implemented: all three record descriptions always visible in Concept 05;
+eight record sources wrap into rows and stack on phones. Concepts 01–04
+reuse the fifth's reader questions, record sources, standard record allowance
+and scoped-file comparison. All five have a fit-call link directly below the
+thumbnail, jumping immediately to the final price card. The bottom button
+opens the sample popup, including all nine exact Type of Property options.
+Concept 05's direct checkout link is removed. Core pricing/scope/policy and
+the supplied image are unchanged; draft testimonials remain labeled.
+
+Commands run from the repository root:
+
+| Command | Exit/result |
+| --- | --- |
+| python previews/vsl-funnels/build.py | 0; seven pages regenerated |
+| python previews/vsl-funnels/validate.py | 0; price boundary, below-video jump, visible record copy, eight sources, nine property types, final fit popup, local links, unchanged assets, scope and transmission/consent gates |
+| node --check previews/vsl-funnels/assets/site.js | 0 |
+| python previews/vsl-funnels/package_preview.py --output <review-export-directory> | 0; 21 approved public files and ZIP |
+| git diff --check | 0 |
+| Inline standard-library guard probes using validate.Page and JSON comparison | 0; all five pages checked, early price and collapsed record probes detected, core pricing/scope/policy/record copy unchanged |
+| python previews/vsl-funnels/validate.py --production | 1, intentionally; only the two requested draft testimonial cards block production |
+
+Browser checks passed for all five at 1280×900, 390×844 and 320×760
+(15 page/viewport combinations): no page, record-strip or popup horizontal
+overflow; all three descriptions visible; eight record sources; six work areas;
+original thumbnail loaded; below-video button immediately follows the player;
+price appears in the viewport after the jump without opening a dialog;
+bottom button opens the popup with a required property type, nine choices plus
+an empty prompt, and unchecked optional consent.
+
+The fifth popup also passed empty-form and missing-property-type validation.
+Synthetic details and a property-type selection produced the explicit
+"No request has been sent" result; all fields reset, including property type,
+and closing returned focus to the trigger. Keyboard FAQ expansion passed.
+The fifth's play notice, close action and return to the play button also passed.
+No real contact, external booking, payment or provider operation was exercised.
+
+The following sections are historical validation records.
+
 ## October 8 single-page redesign
 
 Implemented: five combined VSL/sales pages, one gallery link per concept,

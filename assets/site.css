@@ -1,7 +1,7 @@
 @charset "UTF-8";
 :root{--ink:#10243e;--muted:#52657b;--paper:#fffdf8;--canvas:#f3f6fa;--line:#dce3eb;--brand:#c69a51;--accent:#2157e8;--surface:#fff;--radius:18px;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);font-synthesis:none}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:30px}
+html{scroll-behavior:auto;scroll-padding-top:30px}
 body{margin:0;line-height:1.65}
 button,input,select,textarea{font:inherit}
 button,a,input,select{touch-action:manipulation}
@@ -376,6 +376,8 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .video-frame{aspect-ratio:1672/941;min-height:0;border:1px solid #ffffff26}
 .video-frame:after{display:none}
 .video-thumbnail{display:block;width:100%;height:auto}
+.video-fit-jump{display:flex;width:100%;margin-top:16px;min-height:52px;text-align:center}
+#offer-price{scroll-margin-top:24px}
 .thumbnail-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border:2px solid #f7f3e8;border-radius:50%;width:66px;height:66px;background:#081e3ae8;color:#f7f3e8;box-shadow:0 6px 28px #0005;display:grid;place-items:center;font-size:23px}
 .play-label{position:absolute;top:calc(100% + 8px);white-space:nowrap;font-size:12px;font-weight:700;background:#081e3a;padding:3px 10px;border-radius:4px}
 .video-frame:has([data-video-message]:not([hidden])){aspect-ratio:auto}
@@ -407,6 +409,7 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .archival .btn.secondary{background:transparent;border-color:var(--line);color:var(--ink)}
 .archival .btn:hover{transform:none;background:#e3c77f;filter:none}
 .archival .btn.secondary:hover{background:#f7f3e80b}
+.archival .dialog h2{font-size:31px}
 .archival .price .now{font-size:42px;color:var(--ink)}
 .archival .price .was,.archival .price .save,.archival .price small{font-size:14px}
 .archival .save{background:#cda54820;color:#f0d48f}
@@ -447,8 +450,11 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .record-path li{font-size:14px;padding:8px 12px;border:1px solid var(--line);border-radius:6px}
 .archive-process{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .process-card{border-left:1px solid var(--line);padding-left:22px}
-.record-chips{display:flex;gap:12px;overflow-x:auto;padding-bottom:22px;margin-bottom:18px}
-.record-chips span{white-space:nowrap;font-size:16px;border:1px solid var(--line);background:#173954;padding:17px 22px;border-radius:10px}
+.record-chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-bottom:24px}
+.record-chips span{display:flex;align-items:center;white-space:normal;overflow-wrap:anywhere;font-size:16px;border:1px solid var(--line);background:var(--surface);padding:22px;border-radius:10px;min-height:90px}
+.archival #mechanism .record{border:1px solid var(--line);border-radius:var(--radius);background:var(--surface);padding:26px}
+.archival #mechanism .record h3{font-family:Georgia,serif;font-size:27px;margin-top:22px}
+.archival #mechanism .record p{font-size:16px;line-height:1.7}
 .archival .scope-card h3{font-size:20px}
 .archival .scope-card p{font-size:16px}
 .archival .scope-card{background:var(--surface)}
@@ -456,6 +462,9 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .archive-allowance>div{display:flex;gap:30px;flex-wrap:wrap;margin-block:20px}
 .archive-allowance b{font:34px Georgia,serif;color:#785512;margin-right:8px}
 .archive-allowance p{max-width:900px;color:var(--muted)}
+.funnel-section .archive-allowance b{color:var(--accent)}
+@media(max-width:1000px){.record-chips{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.record-chips,.archival #mechanism .records{grid-template-columns:1fr}.record-chips span{min-height:70px}}
 .archive-value{display:grid;grid-template-columns:1.5fr 1fr;gap:45px;align-items:start}
 .value-row{display:flex;justify-content:space-between;gap:30px;border-bottom:1px solid var(--line);padding-block:22px}
 .value-row:first-child{padding-top:0}

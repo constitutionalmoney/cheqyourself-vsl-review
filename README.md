@@ -6,7 +6,8 @@ Each concept is now one page containing the VSL preview and complete sales
 story. The price, reference price, saving and any monetary value estimates
 appear only in the final offer section, after the explanation, process, six
 work areas, service limits, policy and FAQs. There is no early price, sticky
-price bar, checkout button or shortcut to the offer. The gallery shows no price.
+price bar or checkout button. As requested on October 9, one fit-call button
+directly below each video jumps to its price card. The gallery shows no price.
 
 | Concept | Combined sales/VSL page | Final action |
 | --- | --- | --- |
@@ -14,7 +15,7 @@ price bar, checkout button or shortcut to the offer. The gallery shows no price.
 | 02 · The Direct Conversation | [Review](simple/index.html) | Property fit call preview |
 | 03 · The Records First | [Review](squeeze/index.html) | Property fit call preview |
 | 04 · The Guided Decision | [Review](screenshots/index.html) | Property fit call preview |
-| 05 · The Guardian of the Record | [Review](archival/index.html) | Supplied direct checkout link |
+| 05 · The Guardian of the Record | [Review](archival/index.html) | Property fit call preview |
 
 The former five watch.html pages are removed. The gallery has one page button
 per concept. Concept 03 no longer asks for signup before the overview; the
@@ -31,15 +32,21 @@ All five use the exact supplied thumbnail. Clicking Play explains that the
 recording is pending; closing the notice returns keyboard focus. The written
 explanation is on the same page. No playable recording or captions exist yet.
 
-Concepts 01–04 use a local, sample-only fit form. Required fields validate,
+All five use a local, sample-only fit form. Required fields validate,
 optional consent starts unchecked, values clear and no request, email,
 subscription, appointment or purchase is sent or stored. A request is not a
 confirmed booking. No private property details should be entered here.
 
-Concept 05 retains its exact owner-supplied purchase label and Stripe URL,
-but only in the final offer. Its free-webinar alternative also appears there.
-The current checkout amount, taxes, full terms and paid intake remain
-unverified. Do not complete a transaction while reviewing the design.
+The bottom fit-call button opens the sample popup. It includes the required
+Type of Property dropdown with all nine owner-specified options. The video
+button jumps to the price card without opening the popup. Concept 05 now uses
+this same fit-call path; its former direct Stripe link is removed. Its supplied
+free-webinar alternative remains in the final offer.
+
+All three record descriptions are visible without opening cards. Record-source
+cards wrap into rows and stack on phones. Concepts 01–04 also incorporate
+Concept 05's reader questions, record sources, standard record allowance and
+before-research / after-scoped-work comparison. Their visual styles remain distinct.
 
 Concept 05 retains the owner-supplied proposal-letter bonus, attributed value
 estimates and two explicitly labeled Terry/Saige lorem ipsum placeholders.
@@ -73,8 +80,7 @@ This intentionally fails while the two testimonial placeholders remain.
 No production release is authorized by this review request.
 
 The existing [573-word script](script.html) and [editable copy](vsl-script.md)
-retain a fit-call close for Concepts 01–04. Select a direct-purchase close
-before recording Concept 05.
+retain a fit-call close for all five concepts.
 
 ## Review hosting
 
@@ -96,8 +102,8 @@ not recursively delete the destination or touch its Git metadata.
 
 All pages have noindex,nofollow, no-referrer and a Content Security Policy that
 blocks connections, embedded frames and form transmission. There are no
-external fonts, trackers or dependencies. Only Concept 05's two supplied
-external destinations are allowed.
+external fonts, trackers or dependencies. Only Concept 05's supplied
+free-webinar destination is allowed.
 
 ## Awaiting configuration/assets; still manual
 

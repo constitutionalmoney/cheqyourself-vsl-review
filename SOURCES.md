@@ -1,5 +1,23 @@
 # Source and content decisions
 
+## October 9 revisions
+
+The latest user instructions supersede the fifth brief's direct-purchase CTA
+and the October 8 prohibition on early price shortcuts. All five now use
+"Request a Property Fit Call": below-video links jump to the final price card;
+bottom buttons open a local sample-only popup. No live booking or payment is
+implemented. The popup adds the user's nine exact Type of Property options.
+
+Concept 05's three record descriptions use the user's exact supplied copy and
+remain visible without disclosure controls. Its horizontal record strip becomes
+wrapping cards, stacked on mobile. The first four reuse its diagnostic questions,
+record sources, standard record allowance and scoped-file comparison. Core scope,
+price and approved policy are unchanged. The bonus, attributed value estimates
+and explicitly marked draft testimonials remain specific to the fifth concept.
+
+The sections below record earlier decisions; conflicting CTA instructions are
+historical and do not describe the current review.
+
 ## October 8 redesign
 
 The user's latest request controls this revision: combine the VSL and sales
