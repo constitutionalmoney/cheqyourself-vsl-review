@@ -94,6 +94,12 @@ On October 8, the replacement Pages build completed, all seven public HTML
 pages returned HTTP 200, and all five former watch.html URLs returned HTTP 404.
 The public gallery and all five combined funnels were inspected in a browser.
 
+On October 9, the updated review was published at the same URL. All seven
+HTML pages and the stylesheet returned HTTP 200 and matched the exported
+files. All five published video buttons landed on the price card; their bottom
+buttons opened the updated property-type popup. Concept 05's record cards and
+wrapping sources were checked on desktop and mobile.
+
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
 The exporter creates 21 public files and a ZIP. When updating the existing

@@ -38,6 +38,14 @@ and closing returned focus to the trigger. Keyboard FAQ expansion passed.
 The fifth's play notice, close action and return to the play button also passed.
 No real contact, external booking, payment or provider operation was exercised.
 
+Publication: GitHub Pages reported a successful build at the unchanged review
+URL. All seven public HTML pages and the stylesheet returned HTTP 200 and
+matched the export (line endings normalized). Browser checks passed for all
+five hosted video-to-price jumps and bottom fit popups, including the exact
+nine property-type choices and unchecked consent. The fifth's record cards,
+wrapped sources and popup were inspected at desktop/mobile widths. Screenshots
+were saved outside Git; the browser viewport was reset after testing.
+
 The following sections are historical validation records.
 
 ## October 8 single-page redesign
