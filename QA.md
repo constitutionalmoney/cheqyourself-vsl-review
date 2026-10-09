@@ -1,5 +1,56 @@
 # Validation record
 
+## October 9 supplied V3 video publication
+
+Implemented: all five combined funnels play the supplied final-cut recording.
+The unchanged thumbnail is the poster, playback starts only on request, and
+native controls provide pause and seeking. The presenter caption is
+"Mark Smith · Founder of Cheq Yourself". Current pending-recording notices
+are removed. The below-video price jump and sample fit popup remain.
+
+Media verification: the unchanged original is HEVC/AAC, 409,538,991 bytes.
+The separate streaming copy is H.264/AAC, yuv420p, 1920×1080, 77,659,967 bytes.
+Both have duration 476.102993 seconds and 14,283 video frames. FFmpeg completed
+successfully; the MP4 moov box precedes mdat. The approved checksums are in
+video.json. The binary is in the separate public review repository only.
+
+Commands run from the repository root unless noted:
+
+| Command/check | Exit/result |
+| --- | --- |
+| python previews/vsl-funnels/build.py | 0; seven pages regenerated |
+| python previews/vsl-funnels/validate.py | 0; shared video, poster, founder attribution, manual controls, media policy and existing pricing/scope/privacy guards |
+| node --check previews/vsl-funnels/assets/site.js | 0 |
+| python previews/vsl-funnels/package_preview.py --output <review-export-directory> --video-file <approved-streaming-copy.mp4> | 0; 22 public files and ZIP, including size/checksum-verified video |
+| python previews/vsl-funnels/package_preview.py --output <review-export-directory> | 0; existing approved video reused with matching size/checksum |
+| ffprobe JSON plus standard-library metadata/frame-count/SHA-256/MP4-box inspection | 0; format, original preservation, runtime, frame count, size and fast-start layout verified |
+| ffmpeg -v error -nostdin -ss 470 -i <streaming-copy.mp4> -t 5 -f null - | 0; final playback segment decoded |
+| Standard-library HTTPS HEAD and byte-range comparisons | 0; video/mp4, exact 77,659,967-byte length, HTTP 206 and matching bytes at start, middle and end |
+| Standard-library public-file comparisons | 0; seven HTML pages, CSS and JavaScript returned HTTP 200 and matched the export, with line endings normalized |
+| git diff --check | 0 |
+| python previews/vsl-funnels/validate.py --production | 1, intentionally; only the two requested testimonial placeholders block production |
+
+GitHub Pages reported built with no error for artifact commit
+af7734402307cfe295604ff284e11eabcde1ce13, at the unchanged review URL.
+Browser playback checks passed for all five at 1280×900 and 390×844:
+preload=none left readyState=0 and paused=true before activation; after Play,
+currentTime advanced, readyState=4 and decoded dimensions were 1920×1080.
+The overlay hid, native keyboard pause worked, founder text was present,
+pending copy was absent and there was no horizontal overflow. In Concept 05,
+native keyboard seeking moved playback forward and the below-video fit link
+still jumped to the price card. No console errors or warnings appeared in the
+inspected hosted tab. A phone screenshot captures the actual playing frame,
+fit-call link and founder credit outside Git. Temporary viewport overrides
+were reset after testing.
+
+Reviewed captions remain pending. The earlier editable script is a writing
+reference, not a transcript of V3. Full narrative/audibility and Safari/iOS
+device testing were not performed. Fit requests remain sample-only; this
+publication does not establish email delivery, bookings, payments or
+production application behavior. No dependencies were installed, no VPS
+operation was needed, and application/API suites were not rerun for this
+static-only change. The following sections are historical evidence.
+
 ## October 9 record visibility, shared fit calls and property type
 
 Implemented: all three record descriptions always visible in Concept 05;

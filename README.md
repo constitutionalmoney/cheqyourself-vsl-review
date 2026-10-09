@@ -106,19 +106,27 @@ On October 8, the replacement Pages build completed, all seven public HTML
 pages returned HTTP 200, and all five former watch.html URLs returned HTTP 404.
 The public gallery and all five combined funnels were inspected in a browser.
 
-On October 9, the updated review was published at the same URL. All seven
+On October 9, the record/fit-call update was published at the same URL. All seven
 HTML pages and the stylesheet returned HTTP 200 and matched the exported
-files. All five published video buttons landed on the price card; their bottom
+files. All five published below-video fit links landed on the price card; their bottom
 buttons opened the updated property-type popup. Concept 05's record cards and
 wrapping sources were checked on desktop and mobile.
+
+The supplied V3 video was then published at the same review URL. The host
+served video/mp4 with the exact approved size and matching HTTP 206 ranges
+at its start, middle and end. Actual playback and keyboard pause passed on
+all five concepts at desktop and phone widths; currentTime advanced and
+1920×1080 frames decoded. Native keyboard seeking and the fifth's price jump
+also passed. This verifies draft playback in the tested browser, without
+claiming Safari/iOS testing, reviewed captions or provider operations.
 
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
 The exporter creates 22 public files and a ZIP, including the verified video.
 For a new export, add --video-file <approved-streaming-copy.mp4>. For an existing
 export, its matching video can be reused; size and SHA-256 must match video.json.
-When updating the existing
-export, it safely retires only the five known former watch.html files. It does
+When updating the existing export, it safely retires only the five known
+former watch.html files. It does
 not recursively delete the destination or touch its Git metadata.
 
 All pages have noindex,nofollow, no-referrer and a Content Security Policy that
