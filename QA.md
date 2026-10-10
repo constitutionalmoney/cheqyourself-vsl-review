@@ -369,3 +369,7 @@ appointments, account configuration and launch authorization.
 - Image order: the full Crown Grant follows the exact introductory subheadline. Original proportions and transparency retained in the responsive WebP copies; no content was generated or replaced.
 - Desktop and mobile no longer render the extra introductory fit button, refund reminder, “The three records behind your property” kicker or repeated record labels. The refund policy elsewhere is unchanged.
 - “Start with the records” directly follows both under-video choices. Pricing, service scope, the video, submission guards and Concepts 01–04 remain unchanged.
+
+## Founder credit directly below the video
+
+The exact “Mark Smith · Founder of Cheq Yourself” credit now appears once, directly below the Concept 05 video player and before its two choices. Concepts 01–04 remain unchanged. `python previews/vsl-funnels/build.py`, `python previews/vsl-funnels/validate.py` and `git diff --check` passed with exit 0. Generated HTML order was checked before publication. No styling, offer, media or provider configuration changed.
