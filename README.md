@@ -58,7 +58,7 @@ video to the price card, then open their sample popup from the bottom button.
 The fifth's under-video fit link instead reaches #what-we-do directly
 after the three-layer explanation, with smooth/reduced-motion scrolling and
 a header offset. A second under-video option opens the supplied webinar in
-a secured new tab. The final fifth CTA, after the FAQs, opens its only form.
+a secured new tab. The final fifth CTA, after the FAQs, opens its property-fit form.
 
 Concept 05 stages are property details, contact/processing consent, then
 scheduling. It reuses the existing marketing /api/inquiries payload and requires
@@ -156,7 +156,7 @@ claiming Safari/iOS testing, reviewed captions or provider operations.
 
     python previews/vsl-funnels/package_preview.py --output <review-export-directory>
 
-The exporter creates 24 public files and a ZIP, including the verified video,
+The exporter creates the public review files and a ZIP, including the verified video,
 the new consultation controller and the configuration checklist.
 For a new export, add --video-file <approved-streaming-copy.mp4>. For an existing
 export, its matching video can be reused; size and SHA-256 must match video.json.
@@ -190,3 +190,7 @@ See [source decisions](SOURCES.md), [comparison](COMPARISON.md) and
 ## Latest Concept 05 introduction adjustments
 
 The supplied Crown Grant now follows the hero subheadline, centered in a bordered frame. Responsive WebP derivatives replace the large PNG in the rendered page: 57,248 bytes at 380 pixels wide and 159,258 bytes at 690 pixels wide. The original supplied PNG is retained unchanged for provenance. The frame, including its border, is capped relative to the video player's height. The redundant introductory fit button, refund reminder, player kicker and repeated record labels are removed on all screen sizes. “Start with the records” now follows the two below-video choices on desktop and mobile. The remaining refund policy and late offer are unchanged.
+
+## Concept 05 pre-checkout contact popup
+
+Purchase Now now opens a separate popup requiring name, email and phone before checkout. This GitHub draft does not save or send contacts and cannot continue to Stripe until a private capture destination is configured and tested. The supplied CA$1,799 hosted checkout was inspected read-only. See CHECKOUT-REVIEW.md for the exact remaining connection and consent requirements.

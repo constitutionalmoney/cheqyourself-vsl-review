@@ -80,3 +80,5 @@ and publication permission. No legal outcome is inferred.
 
 Choose a design after reviewing the copy, mobile flow and final action. A
 future production implementation needs separate configuration, review and approval.
+
+Concept 05 additionally previews a Purchase Now contact popup requiring name, email and phone. Contact saving and Stripe continuation remain disabled pending a private capture connection. The four other concepts are unchanged.

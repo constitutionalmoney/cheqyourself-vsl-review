@@ -109,3 +109,11 @@ policy/contact links. Staff scope review, actual delivery, calendar confirmation
 GetResponse integration, verified payment and fulfillment remain separate work.
 The CAD 1,799 / CAD 2,499 offer, six work areas, record allowance, existing
 turnaround and purchase-specific refund policy are unchanged.
+
+## Separate Purchase Now contact popup
+
+`stripe_checkout_url` in archival.json holds the owner-supplied public Stripe Payment Link: https://buy.stripe.com/4gM9AU3OG7JAgUtb1h2go0b. The hosted product and CA$1,799.00 amount were inspected read-only on October 10, 2026.
+
+Purchase Now now opens a pre-checkout popup with required name, email and phone, plus separate processing permission. The current review validates the form but never saves or transmits entries and never opens Stripe. Closing clears unsubmitted details. Marketing follow-up remains disabled and unchecked.
+
+The owner selected both GetResponse and a private inquiry inbox. Confirm the inbox and GetResponse list and connect a reviewed private capture service before enabling continuation. Do not treat purchase-support consent as permission for marketing or override existing unsubscribe choices. GitHub Pages cannot receive these contacts securely. Checkout must stay locked until actual capture is confirmed; no customer data may be appended to the public payment URL. The existing property-fit inquiry path remains separate and disabled. Purchase tracking, GetResponse suppression and fulfillment require verified server-side Stripe payment status. The focused source review is in CHECKOUT-REVIEW.md.

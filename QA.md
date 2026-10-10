@@ -373,3 +373,14 @@ appointments, account configuration and launch authorization.
 ## Founder credit directly below the video
 
 The exact “Mark Smith · Founder of Cheq Yourself” credit now appears once, directly below the Concept 05 video player and before its two choices. Concepts 01–04 remain unchanged. `python previews/vsl-funnels/build.py`, `python previews/vsl-funnels/validate.py` and `git diff --check` passed with exit 0. Generated HTML order was checked before publication. No styling, offer, media or provider configuration changed.
+
+## Purchase Now contact popup — October 10, 2026
+
+- The owner supplied the exact Stripe Payment Link; read-only inspection showed Assert Crown Grant Package and CA$1,799.00. No payment details or Pay action were used.
+- Purchase Now appears between the bonus inclusion and refund/turnaround paragraph and opens a separate native contact dialog.
+- Required name/email/phone and processing consent; optional marketing remains disabled and unchecked.
+- Desktop and mobile popup layouts have no horizontal overflow. Mobile browser: empty submission focuses the required name field; nonnumeric phone fails validation; valid synthetic fields show the explicit not-sent/not-saved status and do not navigate to Stripe. Closing clears all three fields and returns focus to Purchase Now. No horizontal overflow.
+- `python previews/vsl-funnels/build.py`, `python previews/vsl-funnels/validate.py`, `node --check previews/vsl-funnels/assets/purchase.js` and `git diff --check`: exit 0.
+- The owner selected both GetResponse and a private inbox; the exact inbox/list and private backend are not configured. Real capture and checkout continuation remain disabled; no name, email or phone is sent or stored. Concepts 01–04, pricing, scope, media and the guarded fit-call form remain unchanged.
+- Public exporter exit 0: 29 files; ZIP CRC and public-content allowlist passed.
+- The focused source review is in CHECKOUT-REVIEW.md. Payment completion, final tax treatment, provider contact delivery, GetResponse suppression and fulfillment were not tested or changed.
