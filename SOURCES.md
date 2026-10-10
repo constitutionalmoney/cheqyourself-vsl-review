@@ -214,3 +214,7 @@ Cheq Yourself logo, wordmark and square labyrinth; land-records hero,
 property-record dossier and survey-review artwork. Artwork is identified as
 illustrative. It is not presented as a real client file, legal document
 or evidence that a promised result occurred.
+
+## Owner-supplied Concept 05 introduction graphic
+
+The owner supplied `30427.png` for the opening Crown Grant visual and two annotated mobile screenshots indicating which introductory/repeated elements to remove from phones. The graphic is published as `assets/crown-grant-illustration.png`, byte-preserved (1122×1402; SHA-256 `d9664848fd60af56c462581ba07fd5c125d7226f5327714f2a7d4d85080fae82`). It is illustrative artwork, not a verified client record or legal result. The annotated screenshots are reference-only and are not published. Desktop retains its existing introductory details; widths up to 700px hide the marked elements.

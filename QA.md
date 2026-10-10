@@ -346,3 +346,14 @@ operational launch configuration.
 Design selection, recording and caption review, Sites publication when access
 exists, future website integration approval, staff scope review, confirmed
 appointments, account configuration and launch authorization.
+
+## Concept 05 mobile introduction revision — October 9, 2026
+
+- `python previews/vsl-funnels/build.py` — exit 0.
+- `python previews/vsl-funnels/validate.py` — exit 0; all seven pages validated.
+- `git diff --check` — exit 0.
+- Browser checks at 390×844 and 320×760: no horizontal overflow. The red-marked introductory CTA/refund/record link, player kicker and repeated record labels are hidden at widths up to 700px. The founder attribution and both below-video choices remain.
+- Browser check at 1280×900: the existing two-column desktop layout and desktop details remain visible without overflow.
+- The supplied Crown Grant graphic loads at its original 1122×1402 dimensions and immediately precedes the introductory subheadline. The complete asset is preserved without cropping.
+- The remaining under-video fit link scrolls to and focuses `#what-we-do`; it does not open the popup. The final button opens the three-stage popup with all nine property types. Inquiry delivery remains disabled.
+- Concepts 01–04, pricing, scope, video and consultation scripts were unchanged. This revision is authorized for publication to the existing GitHub Pages draft review only.

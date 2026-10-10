@@ -756,3 +756,12 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .calendar-container iframe{display:block;width:100%;border:0;min-height:650px}
 .schedule-step .refund-indicator{margin-block:25px}
 @media(max-width:700px){.video-options{grid-template-columns:1fr}.consultation-dialog{padding:32px 18px}.consultation-progress{gap:6px}.consultation-progress li{padding:7px;font-size:12px}.consultation-actions{flex-direction:column}.archival .archive-hero .btn{width:100%;justify-content:center}}
+
+/* Concept 05: supplied Crown Grant and simplified phone introduction. */
+.archival .hero-crown-grant{display:block;width:230px;max-width:100%;height:auto;margin:0 0 24px;object-fit:contain}
+@media(max-width:700px){
+ .archival .hero-crown-grant{width:190px;margin-inline:auto;margin-bottom:24px}
+ .archival .hero-desktop-details,.archival .archive-hero-video .player-kicker,.archival .archive-hero-video .record-words,.archival .archive-hero-video .video-caption span:last-child{display:none}
+ .archival .archive-hero-bottom{gap:16px}
+ .archival .archive-hero-video .video-caption{margin-bottom:0}
+}
