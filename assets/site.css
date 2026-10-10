@@ -757,11 +757,14 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
 .schedule-step .refund-indicator{margin-block:25px}
 @media(max-width:700px){.video-options{grid-template-columns:1fr}.consultation-dialog{padding:32px 18px}.consultation-progress{gap:6px}.consultation-progress li{padding:7px;font-size:12px}.consultation-actions{flex-direction:column}.archival .archive-hero .btn{width:100%;justify-content:center}}
 
-/* Concept 05: supplied Crown Grant and simplified phone introduction. */
-.archival .hero-crown-grant{display:block;width:230px;max-width:100%;height:auto;margin:0 0 24px;object-fit:contain}
+/* Concept 05: responsive original artwork and a streamlined introduction. */
+.archival .archive-hero-bottom{container-type:inline-size}
+.archival .hero-crown-frame{display:block;height:min(300px,calc((100cqw - 55px)*.315 - 2px));width:auto;aspect-ratio:1122/1402;max-width:100%;margin:24px auto;padding:8px;border:1px solid #cda54899;border-radius:14px;background:#ffffff05;box-sizing:border-box}
+.archival .hero-crown-grant{display:block;width:100%;height:100%;object-fit:contain}
+.archival .archive-hero .story-link{text-align:center}
+@media(max-width:1000px){.archival .hero-crown-frame{height:min(300px,calc((100cqw - 30px)*.28125 - 2px))}}
 @media(max-width:700px){
- .archival .hero-crown-grant{width:190px;margin-inline:auto;margin-bottom:24px}
- .archival .hero-desktop-details,.archival .archive-hero-video .player-kicker,.archival .archive-hero-video .record-words,.archival .archive-hero-video .video-caption span:last-child{display:none}
+ .archival .hero-crown-frame{height:calc(100cqw*.5625 - 2px)}
  .archival .archive-hero-bottom{gap:16px}
  .archival .archive-hero-video .video-caption{margin-bottom:0}
 }

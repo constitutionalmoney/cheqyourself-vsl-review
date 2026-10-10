@@ -55,7 +55,7 @@ No private property details should be entered here.
 All five retain the exact "Request a Property Fit Call" label and all nine
 owner-specified Type of Property options. Concepts 01–04 still jump from the
 video to the price card, then open their sample popup from the bottom button.
-The fifth's hero and under-video fit links instead reach #what-we-do directly
+The fifth's under-video fit link instead reaches #what-we-do directly
 after the three-layer explanation, with smooth/reduced-motion scrolling and
 a header offset. A second under-video option opens the supplied webinar in
 a secured new tab. The final fifth CTA, after the FAQs, opens its only form.
@@ -76,7 +76,7 @@ separate and unconnected: its checkbox remains disabled and unchecked.
 See [configuration checklist](CONSULTATION-CONFIG.md).
 
 The fifth uses the exact supplied new hero copy and 14-day refund wording in
-the hero, near the offer and in scheduling. Each reminder applies to a package
+the offer and in scheduling. Each reminder applies to a package
 purchase under written service terms, not to requesting or booking a call.
 
 All three record descriptions are visible without opening cards. Record-source
@@ -186,3 +186,7 @@ production integration require separate approval.
 
 See [source decisions](SOURCES.md), [comparison](COMPARISON.md) and
 [validation evidence](QA.md).
+
+## Latest Concept 05 introduction adjustments
+
+The supplied Crown Grant now follows the hero subheadline, centered in a bordered frame. Responsive WebP derivatives replace the large PNG in the rendered page: 57,248 bytes at 380 pixels wide and 159,258 bytes at 690 pixels wide. The original supplied PNG is retained unchanged for provenance. The frame, including its border, is capped relative to the video player's height. The redundant introductory fit button, refund reminder, player kicker and repeated record labels are removed on all screen sizes. “Start with the records” now follows the two below-video choices on desktop and mobile. The remaining refund policy and late offer are unchanged.

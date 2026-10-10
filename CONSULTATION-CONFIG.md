@@ -76,7 +76,7 @@ existing service limitation.
 The official embed guide does not document name/email prefill parameters, so
 none are invented. Property details, name, email and phone are never appended to
 third-party URLs. The provider script loads only after the visitor's inquiry is
-accepted. All five local CTA events contain a known ID only and are not sent to
+accepted. All four local CTA events contain a known ID only and are not sent to
 an analytics service. No provider booking webhook or GetResponse stop-email
 automation is integrated by this static-page change.
 

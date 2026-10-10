@@ -357,3 +357,15 @@ appointments, account configuration and launch authorization.
 - The supplied Crown Grant graphic loads at its original 1122×1402 dimensions and immediately precedes the introductory subheadline. The complete asset is preserved without cropping.
 - The remaining under-video fit link scrolls to and focuses `#what-we-do`; it does not open the popup. The final button opens the three-stage popup with all nine property types. Inquiry delivery remains disabled.
 - Concepts 01–04, pricing, scope, video and consultation scripts were unchanged. This revision is authorized for publication to the existing GitHub Pages draft review only.
+
+## Centered bordered Crown Grant and desktop cleanup — latest revision
+
+- `python previews/vsl-funnels/build.py`: exit 0.
+- `python previews/vsl-funnels/validate.py`: exit 0, seven pages.
+- `node --check previews/vsl-funnels/assets/site.js` and `node --check previews/vsl-funnels/assets/consultation.js`: exit 0.
+- `node --test previews/vsl-funnels/tests/consultation.test.cjs`: exit 0, eight tests.
+- `git diff --check`: exit 0.
+- Browser checks at 320, 390, 700, 701, 950, 1000 and 1280 pixels: no horizontal overflow; framed image centered within 0.01px; border-inclusive image height below video height at every width.
+- Image order: the full Crown Grant follows the exact introductory subheadline. Original proportions and transparency retained in the responsive WebP copies; no content was generated or replaced.
+- Desktop and mobile no longer render the extra introductory fit button, refund reminder, “The three records behind your property” kicker or repeated record labels. The refund policy elsewhere is unchanged.
+- “Start with the records” directly follows both under-video choices. Pricing, service scope, the video, submission guards and Concepts 01–04 remain unchanged.
