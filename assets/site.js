@@ -1,8 +1,8 @@
 (() => {
   "use strict";
 
-  // This prototype never transmits or stores form values.
-  const dialog = document.querySelector("#fit-dialog");
+  // Concepts 01–04 remain sample-only. Concept 05 has its own guarded controller.
+  const dialog = document.querySelector("#fit-dialog:not([data-consultation])");
   let returnFocus = null;
   const openFit = (trigger) => {
     returnFocus = trigger;
@@ -14,7 +14,7 @@
     if (result) result.hidden = true;
   };
   document.querySelectorAll("[data-fit]").forEach((button) => {
-    button.addEventListener("click", () => openFit(button));
+    if (dialog) button.addEventListener("click", () => openFit(button));
   });
   dialog?.querySelectorAll("[data-close]").forEach((button) => {
     button.addEventListener("click", () => dialog.close());

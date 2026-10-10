@@ -1,5 +1,30 @@
 # Five combined funnel concepts and PR 80
 
+## Latest Concept 05 revision — published draft review
+
+The fifth now uses the supplied investigative hero and two options directly
+under the video. Its early fit buttons reach the six-work-area service section;
+the webinar option opens the supplied land.cheqyourself.com URL. The price and
+value remain late in the story, then come testimonial placeholders, the explicit
+purchase refund policy, FAQs and final consultation. The final button opens a
+three-stage property/contact/scheduling popup instead of the sample popup.
+
+Its configured booking URL is https://tymeslot.app/cheqyourself. The adapter
+requires confirmed acceptance through the existing marketing inquiry contract
+before Tymeslot can appear. Delivery is disabled by default pending same-origin
+hosting and recipient configuration. Mocked acceptance/failure checks are not
+evidence of live delivery or appointments. Unsubmitted values persist in the
+current tab until cleared/reloaded; accepted inquiry state survives popup close.
+Marketing consent remains disabled/unchecked while subscription is unconnected.
+
+Concepts 01–04 keep their existing video-to-price jump and sample form. Their
+generated HTML, the gallery and script are unchanged by this revision. No
+conversion experiment or production integration was performed. The public
+GitHub Pages review includes this revision following the owner's October 9
+publication approval. See CONSULTATION-CONFIG.md for the remaining steps.
+
+The sections below describe the earlier published review and its source history.
+
 ## Current October 9 review
 
 Each concept is one standalone page with its VSL at the beginning and a

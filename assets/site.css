@@ -727,3 +727,32 @@ th{background:var(--canvas);font-size:11px;text-transform:uppercase;letter-spaci
  .offer-card{padding:24px}
  .concept-art.unified-art h3,.concept-card:last-child:nth-child(odd) .unified-art h3{font-size:24px}
 }
+
+/* Concept 05's service-first choices and staged consultation. */
+.archival :is(#what-we-do,#offer-price,#consultation){scroll-margin-top:calc(var(--archive-header-height,100px) + 16px)}
+.archival .archive-hero .story-link{display:block;margin-top:22px}
+.video-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:20px}
+.video-options article{display:flex;flex-direction:column;align-items:stretch;min-width:0;padding:20px 16px;border:1px solid var(--line);border-radius:12px;background:#102b49}
+.archival .video-options h3{font-size:18px;margin:0 0 12px}
+.archival .video-options p{font-size:14px;color:var(--muted);margin:0 0 18px;flex:1}
+.archival .video-options .btn{padding:12px;font-size:13px;text-align:center;justify-content:center;white-space:normal;overflow-wrap:anywhere}
+.refund-indicator{display:flex;flex-direction:column;gap:3px;max-width:520px;margin-top:18px;border-left:2px solid var(--brand);padding:8px 0 8px 14px;font-size:13px}
+.refund-indicator strong{color:#e5c577}
+.refund-indicator span{color:var(--muted)}
+.deliverables-title{margin:0 0 25px}
+.archival #consultation .btn{margin:15px 12px 0 0}
+.consultation-dialog{width:min(780px,calc(100% - 32px));max-height:calc(100dvh - 32px);overflow:auto}
+.consultation-progress{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:22px 0;list-style:none;font-size:13px}
+.consultation-progress li{border:1px solid var(--line);border-radius:6px;padding:8px 12px;flex:1;text-align:center;white-space:nowrap}
+.consultation-progress [aria-current]{border-color:var(--brand);color:#e5c577;background:#cda54815}
+.consultation-dialog fieldset{border:0;padding:0;margin:0;min-width:0}
+.consultation-dialog legend{font-size:21px;font-weight:700;margin-bottom:20px;padding:0}
+.consultation-dialog textarea{display:block;width:100%;min-height:110px;resize:vertical;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:12px}
+.consultation-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
+.consultation-actions .btn{flex:1}
+.consultation-status{border:1px solid var(--brand);padding:14px;border-radius:8px;font-size:14px!important}
+.text-button{background:transparent;border:0;color:var(--muted);padding:12px 0;text-decoration:underline;font-size:13px}
+.schedule-step .btn{display:flex;text-align:center;justify-content:center;margin-top:18px}
+.calendar-container iframe{display:block;width:100%;border:0;min-height:650px}
+.schedule-step .refund-indicator{margin-block:25px}
+@media(max-width:700px){.video-options{grid-template-columns:1fr}.consultation-dialog{padding:32px 18px}.consultation-progress{gap:6px}.consultation-progress li{padding:7px;font-size:12px}.consultation-actions{flex-direction:column}.archival .archive-hero .btn{width:100%;justify-content:center}}

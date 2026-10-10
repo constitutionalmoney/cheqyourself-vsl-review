@@ -1,5 +1,65 @@
 # Validation record
 
+## October 9 Concept 05 optimization — published draft review
+
+Implemented: exact supplied hero, unchanged fit-call labels, header-offset
+service anchors with reduced-motion behavior, two responsive video options,
+purchase-specific refund messaging and the requested section order. One staged
+property/contact/scheduling dialog reuses the existing marketing inquiry API.
+The owner-supplied Tymeslot URL is configured; default submission is disabled.
+The owner subsequently approved the public static review update. The production
+application remains unchanged.
+
+Commands run from the repository root, using existing dependencies:
+
+| Command/check | Exit/result |
+| --- | --- |
+| python previews/vsl-funnels/build.py | 0; seven pages regenerated |
+| python previews/vsl-funnels/validate.py | 0; exact copy, anchors/order, one form/three stages, pricing/scope/media/consent/security guards |
+| node --check previews/vsl-funnels/assets/site.js | 0 |
+| node --check previews/vsl-funnels/assets/consultation.js | 0 |
+| node --test previews/vsl-funnels/tests/consultation.test.cjs | 0; eight tests passed: consent, existing payload, disabled/cross-origin gate, malformed success, provider/network failure, no fabricated booking, safe booking URLs, private-data-free CTA IDs |
+| python -m unittest discover -s previews/vsl-funnels/tests -p "test_*.py" | 0; one adapter-to-existing-API test passed, mocked sender, duplicate request accepted once |
+| python -m unittest discover -s apps/marketing/tests -p "test_*.py" | 0; 26 existing tests passed, external delivery mocked |
+| python previews/vsl-funnels/validate.py --production | 1 as intended; the two explicitly requested testimonial placeholders still block production |
+| git diff --check | 0 |
+| python previews/vsl-funnels/package_preview.py --output <new-local-review-directory> --video-file <approved-streaming-copy.mp4> | 0; 24 public files and ZIP, video size/checksum verified; no publication |
+| Standard-library source/export comparison and ZIP CRC inspection | 0; first four concepts, gallery and script match the preceding source commit; ZIP contains 24 approved files and excludes test harnesses |
+
+Browser checks in the Codex in-app browser covered Concept 05 at 1280×900,
+390×844 and 320×760: no page or popup horizontal overflow, side-by-side desktop
+choices and vertically stacked phone choices, all nine property types, early
+CTA service destination with target focus and no popup, and final popup opening.
+Empty property fields and missing contact consent block progression/submission.
+Disabled submission reports nothing sent, preserves values, keeps scheduling
+locked and loads no iframe. Escape closes and returns focus to the final CTA;
+reopening retains the unfinished stage. Explicit clear resets the unsubmitted
+fields. Keyboard focus remains inside the modal; keyboard FAQ expansion passes.
+Submission feedback receives keyboard focus. The existing V3 player still
+decodes 1920×1080 frames with readyState=4 and advances playback; native keyboard
+pause works. A shared-script smoke check on Concept 01 still opens its sample
+popup with all nine property choices and unchecked optional consent.
+
+Loopback test harnesses exercise the real existing inquiry contract with synthetic
+example.invalid fields and a mocked sender, never SMTP or Tymeslot. Accepted
+delivery unlocks stage 3, clears personal inputs and exposes only the exact public
+booking URL. Closing/reopening preserves stage 3 and explicitly says the inquiry
+does not confirm an appointment. Unavailable delivery (503) retains stage 2 and
+its inputs, displays the error, and never adds a scheduling href or iframe.
+No real inquiry, appointment, email, subscription or payment is produced.
+
+Saved desktop, phone video-choice and phone popup screenshots are outside Git
+in the local optimization-review deliverable. These are local presentation and
+mocked integration evidence. Tymeslot account availability, domain authorization,
+actual inline rendering, calendar invitations, inbox receipt, reviewed captions,
+Safari/iOS and production hosting remain unverified. No dependency was installed.
+Next.js, API/worker and production-stack gates were not run for this preview-only
+change; the unchanged marketing boundary was tested as described above.
+
+The owner subsequently approved GitHub review publication on October 9.
+Source revision: 27573253feb6581c758330cc2dd6b10df6661b85. All following
+publication and playback sections are historical evidence for earlier revisions.
+
 ## October 9 supplied V3 video publication
 
 Implemented: all five combined funnels play the supplied final-cut recording.

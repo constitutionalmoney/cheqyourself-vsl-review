@@ -1,5 +1,44 @@
 # Source and content decisions
 
+## October 9 Concept 05 optimization
+
+The latest attached optimization brief controls only Concept 05. Its supplied
+hero text is used verbatim. Every "Request a Property Fit Call" label stays
+unchanged. The hero and under-video actions now reach #what-we-do immediately
+after the three-layer explanation. The final consultation action opens one
+three-stage form; it follows pricing/value, testimonials, refund policy and FAQs.
+Other established copy sections remain. Concepts 01–04 retain their prior flow.
+
+The attached text is implementation guidance, distinct from verified evidence
+or authorization for live account operations. It explicitly says, "Do not
+publish or deploy automatically. Provide the completed changes for review first."
+This revision was first completed locally for review. The owner subsequently
+authorized publishing it to the same GitHub review URL on October 9. This new
+approval covers the static review, not live inquiry, booking or production work.
+
+The owner's subsequent direct reply supplies the exact booking URL:
+https://tymeslot.app/cheqyourself. It does not identify a new inquiry recipient.
+The existing apps/marketing/server.py inquiry contract is reused without changing
+the backend. Sending remains disabled pending reviewed same-origin hosting and
+delivery configuration. A successful mocked API result demonstrates the adapter,
+not live recipient delivery, account availability or a confirmed appointment.
+
+Tymeslot's official https://tymeslot.app/docs/embed describes the programmatic
+embed.js / TymeslotBooking.embed API, HTTPS hosting and embedding-domain
+authorization. No name/email prefills are documented there, so no guessed
+parameters are used. An accepted inquiry unlocks the embed or direct-link
+fallback; neither acceptance nor a click becomes a confirmed booking.
+
+The requested Terry case-study position is retained with an explicit placeholder.
+Evidence and publication permission are still absent, so no story or result is
+invented. Previously requested Terry/Saige testimonial placeholders stay visibly
+labeled. The CAD 1,799 price, CAD 2,499 reference, six work areas, record allowance,
+bonus and established service terms are unchanged. The new refund wording is
+purchase-specific and subject to written terms.
+
+The following sections are historical source decisions, not current publication
+or provider-operation claims for this optimization.
+
 ## October 9 supplied V3 recording
 
 The user supplied VSL-AssertCrownGrantPackage-V3-FinalCut.mp4 and explicitly
